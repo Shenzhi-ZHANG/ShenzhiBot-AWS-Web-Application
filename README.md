@@ -1,4 +1,4 @@
-# ShenzhiBot-WebApplication
+# ShenzhiBot-AWS-Web-Application
 
 A scalable AWS-based web application that provides intelligent dining suggestions to users.
 
