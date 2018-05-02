@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+- 4
+after_success:
+- npm run cover
+- bash <(curl -s https://codecov.io/bash)
+deploy:
+  provider: npm
+  email: tonybadguy+npm@gmail.com
+  api_key:
+    secure: r8t9r8Hs3qaGDc5doGyawLBiMplhscSYapiCZZwMAfTHdHc237V/YGA5cHq4P9SoduW4m3aeClR6qHCTgo0Czq4kWPdvzZbFFXZ9GAhTBs3LPnVNzPpLAhAtUA6mivEIIWum3s/UtzM70aWVfXF2ix6XFzXsI+AlRvaHZuiqMDWpu4KykQwfqIbIT7bCW3I3bZ4vqPXp6EuPZgbJ+FFu3CxqCMUziU10uuZ39uLBzIFyCOZbrENkCXkYMDeyuba3RKtMmgXfnKnnKrNZmTJ9SmQeJd8c/kt/FipszLW8TNUMDRHsr+EiIFV+eO5npuSNYX6WZ9Vy3DsrB2+8eCj6FpgG8y6zBaSycPH/R3uBEduE1Q8VIIyF3hbfzRveVN7JjG1poi/PlL08NflpgD6xyTBYFIq6jevFHNfOTHl0C/AEO6XkLP2b55kclP8XcBuJbSUJhDhijczHHmiEvZmRKeVVbZ+XJhX+6kyn5vnZN3DAFafnMqqE7UIYEWvupWRAWQDz8d5JOSzUABjwE5JYXYdTV/lyTsgdPyCHCymVrp/uIP0JftGzUCr+y448L3+2OJqB9hKHu2eFx5Bmw6tJ0xYdTC8Y/UYUioiOXA2IvESyv140VZR4pPbyvorhuhfKBT/smhYjYhDvK4OJwzWu3Lgc/rrrL2pizabw/lTvNDs=
+  on:
+    tags: true
+    repo: tonybadguy/call-me-maybe
